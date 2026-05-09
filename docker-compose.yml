@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: garage-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - garage-network
+
+  backend:
+    build: ./garage-backend
+    container_name: garage-backend
+    ports:
+      - "5001:5001"
+    environment:
+      MONGODB_URI: mongodb://admin:password@mongodb:27017/garageDB?authSource=admin
+      JWT_SECRET: your_jwt_secret_change_this
+      JWT_EXPIRE: 7d
+      PORT: 5001
+      FRONTEND_URL: http://localhost:5173
+    depends_on:
+      - mongodb
+    networks:
+      - garage-network
+
+  frontend:
+    build: ./garage-frontend
+    container_name: garage-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:5001/api
+    depends_on:
+      - backend
+    networks:
+      - garage-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  garage-network:
+    driver: bridge

@@ -52,14 +52,6 @@ npm run seed
 docker-compose up --build
 ```
 
-## 🔑 Test Credentials
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@garage.com | admin123 |
-| Manager | sarah@garage.com | manager123 |
-| Mechanic | john@garage.com | mech123 |
-| Receptionist | lisa@garage.com | recep123 |
 
 ## 📁 Project Structure
 

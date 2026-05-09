@@ -101,3 +101,17 @@ API docs available at: `http://localhost:5000/api-docs` (Swagger UI)
 ## 📄 License
 
 MIT
+
+
+##Pages
+
+<img width="1470" height="956" alt="Screenshot 2026-05-09 at 1 41 15 PM" src="https://github.com/user-attachments/assets/43ad9ea2-3ebf-4c2f-b507-4c6ffe682e1b" />
+<img width="1470" height="956" alt="Screenshot 2026-05-09 at 1 41 26 PM" src="https://github.com/user-attachments/assets/3143ba97-7071-4613-a29f-15eda354ca5e" />
+
+<img width="1470" height="956" alt="Screenshot 2026-05-09 at 1 41 40 PM" src="https://github.com/user-attachments/assets/b8896aa3-8499-417c-82d5-6711b586bece" />
+
+<img width="1470" height="956" alt="Screenshot 2026-05-09 at 2 09 18 PM" src="https://github.com/user-attachments/assets/17989ae9-8415-433f-ad19-340aab9a6ff3" />
+
+
+
+
